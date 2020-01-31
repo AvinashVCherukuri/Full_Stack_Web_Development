@@ -1,0 +1,82 @@
+body {
+  font-family: "Helvetica Neue";
+}
+
+h1 {
+  color: grey;
+  font-size: 60px;
+}
+
+h3 {
+  color: "dark grey";
+  font-size: 30px;
+  letter-spacing: 4px;
+  word-spacing: 1px;
+}
+
+h2 {
+  color: "teal";
+  font-size: 15px;
+  letter-spacing: 4px;
+  word-spacing: 1px;
+}
+
+p{
+	color : orange;
+	font-size: 20px;
+	letter-spacing: 2px;
+	word-spacing: 1px;
+}
+
+.go li {
+	display: inline-block;
+}
+
+header {
+  background-color: #222;
+  overflow: hidden;
+  text-align: center;
+}
+
+header a {
+  display: inline-block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  font-size: 18px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+header a:hover {
+  background-color: #f2532b;
+  color: black;
+}
+
+footer {
+  background-color: #222;
+  overflow: hidden;
+  text-align:center;
+}
+
+footer p {
+  display: inline-block;
+  color: #f2f2f2;
+  padding: 14px;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+footer p:hover {
+  background-color: #f2532b;
+  color: black;
+}
+
+img {
+	border-radius: 5px;
+}
+
+figcaption {
+	letter-spacing: 2px
+	color: green;
+	font-size: 13px;
+}
