@@ -1,85 +1,198 @@
-body {
+html {
+  font-size: 16px;
   font-family: "Helvetica Neue";
-  position : relative;
+}
+
+body {
+  background-color: #F2F2F2;
 }
 
 h1 {
-  color: grey;
-  font-size: 60px;
-}
-
-h3 {
-  color: "dark grey";
-  font-size: 30px;
-  letter-spacing: 4px;
-  word-spacing: 1px;
+  color: white;
+  font-size: 28px;
+  font-family: "Helvetica Neue";
+  text-transform: uppercase;
 }
 
 h2 {
-  color: "teal";
-  font-size: 15px;
-  letter-spacing: 4px;
-  word-spacing: 1px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 2.5;
+  font-family: "Helvetica Neue";
+  word-spacing: 0.05em;
+  letter-spacing: 0.02em;
 }
 
-p{
-	color : orange;
-	font-size: 20px;
-	letter-spacing: 2px;
-	word-spacing: 1px;
+a {
+  text-decoration: none;
 }
 
-.go li {
-	display: inline-block;
+p {
+  margin: 16px 0;
+  font-family: "Helvetica Neue";
 }
+
+strong {
+  font-weight: bold;
+}
+
+#introduction {
+  padding-top: 77px;
+  margin-top: -77px;
+}
+
+/* Header */
 
 header {
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  line-height: 1.25;
   background-color: #222;
-  overflow: hidden;
-  text-align: center;
-  width: 100%;
-  top: 0;
   position: fixed;
+  top: 0;
+  width: 100%;
+  font-weight: 900;
+}
+
+header li {
+  display: inline-block;
 }
 
 header a {
-  color: #f2f2f2;
-  padding: 14px 16px;
-  font-size: 18px;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-
-header a:hover {
-  background-color: #f2532b;
-  color: black;
+  display: block;
+  color: #ffffff;
+  padding: 30px 20px;
 }
 
 footer {
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  line-height: 1.25;
   background-color: #222;
-  overflow: hidden;
-  text-align:center;
+  position: relative;
+  top: 0;
+  width: 100%;
+  font-weight: 900;
 }
 
-footer p {
+footer li {
   display: inline-block;
-  color: #f2f2f2;
-  padding: 14px;
-  font-size: 13px;
-  letter-spacing: 2px;
 }
 
-footer p:hover {
-  background-color: #f2532b;
-  color: black;
+footer a {
+  align-content: center;
+  display: block;
+  color: #ffffff;
+  padding: 30px 20px;
 }
 
-img {
-	border-radius: 5px;
+a.home {
+  color: #4D00FF;
 }
 
-figcaption {
-	letter-spacing: 2px
-	color: green;
-	font-size: 13px;
+
+/* Banner Section */
+
+.welcome {
+  background-color: #4D00FF;
+  padding: 100px 0;
+  margin-top: 77px;
+  text-align: center;
 }
+
+.welcome p {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.4;
+  font-family: "Helvetica Neue";
+  font-size: 20px;
+}
+
+/* Editorial Sections */
+
+.content {
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  color: #4C4C4C;
+}
+
+/* Font Card Sections */
+
+.font-card {
+  background-color: #ffffff;
+  margin: 50px 0;
+  padding: 20px 50px;
+}
+
+.font-card .creator {
+  font-size: 20px;
+  line-height: 1.25;
+  font-style: italic;
+}
+
+.sample {
+  display: inline-block;
+  padding: 0 20px;
+  margin: 20px;
+}
+
+.sample h2 {
+  line-height: 1.5;
+}
+
+.sample .text {
+  color: #4D00FF;
+  font-size: 100px;
+}
+
+/* Add styles for the Garamond font here */
+
+.garamond .sample .text {
+  font-family: Garamond, serif;
+}
+
+/* Add styles for the Helvetica font here */
+
+.helvetica .sample .text {
+  font-family: Helvetica, sans-serif;
+}
+
+/* Add styles for the Space Mono font here */
+
+.space .sample .text {
+  font-family: "Space Mono", monospace;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.regular {
+  font-weight: normal;
+}
+
+.italic {
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 535px) {
+  .header {
+    font-size: 14px;
+  }
+
+  .header a {
+    padding: 30px 20px;
+  }
+
+  a.home {
+    display: none;
+  }
+}
+
