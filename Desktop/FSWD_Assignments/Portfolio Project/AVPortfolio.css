@@ -12,6 +12,8 @@ h1 {
   font-size: 28px;
   font-family: "Helvetica Neue";
   text-transform: uppercase;
+  letter-spacing: 10px;
+  color: rgb(52,199,89);
 }
 
 h2 {
@@ -21,6 +23,7 @@ h2 {
   font-family: "Helvetica Neue";
   word-spacing: 0.05em;
   letter-spacing: 0.02em;
+  letter-spacing: 5px;
 }
 
 a {
@@ -30,10 +33,7 @@ a {
 p {
   margin: 16px 0;
   font-family: "Helvetica Neue";
-}
-
-strong {
-  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 #introduction {
@@ -60,8 +60,9 @@ header li {
 
 header a {
   display: block;
-  color: #ffffff;
+  color: #FFFFF0;
   padding: 30px 20px;
+  letter-spacing: 1px;
 }
 
 footer {
@@ -82,36 +83,21 @@ footer li {
 footer a {
   align-content: center;
   display: block;
-  color: #ffffff;
+  color: #FFFFF0;
   padding: 30px 20px;
+  letter-spacing: 1px;
 }
 
 a.home {
-  color: #4D00FF;
+  color: #FFE5B4;
 }
 
-
-/* Banner Section */
-
 .welcome {
-  background-color: #4D00FF;
+  background-color: #FA8072;
   padding: 100px 0;
   margin-top: 77px;
   text-align: center;
 }
-
-.welcome p {
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  padding: 10px;
-  color: #ffffff;
-  font-weight: bold;
-  line-height: 1.4;
-  font-family: "Helvetica Neue";
-  font-size: 20px;
-}
-
-/* Editorial Sections */
 
 .content {
   padding: 20px;
@@ -119,80 +105,3 @@ a.home {
   text-align: center;
   color: #4C4C4C;
 }
-
-/* Font Card Sections */
-
-.font-card {
-  background-color: #ffffff;
-  margin: 50px 0;
-  padding: 20px 50px;
-}
-
-.font-card .creator {
-  font-size: 20px;
-  line-height: 1.25;
-  font-style: italic;
-}
-
-.sample {
-  display: inline-block;
-  padding: 0 20px;
-  margin: 20px;
-}
-
-.sample h2 {
-  line-height: 1.5;
-}
-
-.sample .text {
-  color: #4D00FF;
-  font-size: 100px;
-}
-
-/* Add styles for the Garamond font here */
-
-.garamond .sample .text {
-  font-family: Garamond, serif;
-}
-
-/* Add styles for the Helvetica font here */
-
-.helvetica .sample .text {
-  font-family: Helvetica, sans-serif;
-}
-
-/* Add styles for the Space Mono font here */
-
-.space .sample .text {
-  font-family: "Space Mono", monospace;
-}
-
-.bold {
-  font-weight: 900;
-}
-
-.regular {
-  font-weight: normal;
-}
-
-.italic {
-  font-weight: normal;
-  font-style: italic;
-}
-
-/* Media Queries */
-
-@media only screen and (max-width: 535px) {
-  .header {
-    font-size: 14px;
-  }
-
-  .header a {
-    padding: 30px 20px;
-  }
-
-  a.home {
-    display: none;
-  }
-}
-
