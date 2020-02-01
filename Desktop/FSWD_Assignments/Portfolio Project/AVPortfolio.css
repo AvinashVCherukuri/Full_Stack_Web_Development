@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-color: #F2F2F2;
+  background-color: rgb(229,229,234);
 }
 
 h1 {
@@ -13,7 +13,7 @@ h1 {
   font-family: "Helvetica Neue";
   text-transform: uppercase;
   letter-spacing: 10px;
-  color: rgb(52,199,89);
+  color: rgb(229,229,234);
 }
 
 h2 {
@@ -22,8 +22,8 @@ h2 {
   line-height: 2.5;
   font-family: "Helvetica Neue";
   word-spacing: 0.05em;
-  letter-spacing: 0.02em;
   letter-spacing: 5px;
+  color: rgb(0,122,255);
 }
 
 a {
@@ -33,7 +33,8 @@ a {
 p {
   margin: 16px 0;
   font-family: "Helvetica Neue";
-  letter-spacing: 2px;
+  letter-spacing: 1.3px;
+  color: rgb(44,44,46);
 }
 
 #introduction {
@@ -41,12 +42,10 @@ p {
   margin-top: -77px;
 }
 
-/* Header */
-
 header {
   font-family: "Helvetica Neue";
   font-size: 14px;
-  line-height: 1.25;
+  line-height: 1;
   background-color: #222;
   position: fixed;
   top: 0;
@@ -60,7 +59,14 @@ header li {
 
 header a {
   display: block;
-  color: #FFFFF0;
+  color: rgb(229,229,234);
+  padding: 30px 20px;
+  letter-spacing: 1px;
+}
+
+header a:hover {
+  display: block;
+  color: rgb(0,122,255);
   padding: 30px 20px;
   letter-spacing: 1px;
 }
@@ -81,19 +87,25 @@ footer li {
 }
 
 footer a {
-  align-content: center;
   display: block;
-  color: #FFFFF0;
+  color: rgb(229,229,234);
+  padding: 30px 20px;
+  letter-spacing: 1px;
+}
+
+footer a:hover {
+  display: block;
+  color: rgb(255,59,48);
   padding: 30px 20px;
   letter-spacing: 1px;
 }
 
 a.home {
-  color: #FFE5B4;
+  color: rgb(0,122,255);
 }
 
 .welcome {
-  background-color: #FA8072;
+  background-color: rgb(52,199,89);
   padding: 100px 0;
   margin-top: 77px;
   text-align: center;
