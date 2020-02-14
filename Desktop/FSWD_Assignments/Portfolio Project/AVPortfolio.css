@@ -1,128 +1,85 @@
-html {
-  font-size: 16px;
-  font-family: "Helvetica Neue";
-}
-
 body {
-  background-color: rgb(229,229,234);
+  font-family: "Helvetica Neue";
 }
 
 h1 {
-  font-size: 28px;
-  font-family: "Helvetica Neue";
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  color: rgb(229,229,234);
+  color: grey;
+  font-size: 60px;
+}
+
+h3 {
+  color: "dark grey";
+  font-size: 30px;
+  letter-spacing: 4px;
+  word-spacing: 1px;
 }
 
 h2 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 2.5;
-  font-family: "Helvetica Neue";
-  word-spacing: 0.05em;
-  letter-spacing: 5px;
-  color: rgb(0,122,255);
+  color: "teal";
+  font-size: 15px;
+  letter-spacing: 4px;
+  word-spacing: 1px;
 }
 
-a {
-  text-decoration: none;
+p{
+	color : orange;
+	font-size: 20px;
+	letter-spacing: 2px;
+	word-spacing: 1px;
 }
 
-p {
-  margin: 16px 0;
-  font-family: "Helvetica Neue";
-  letter-spacing: 1.3px;
-  color: rgb(44,44,46);
-}
-
-#introduction {
-  padding-top: 77px;
-  margin-top: -77px;
+.go li {
+	display: inline-block;
 }
 
 header {
-  font-family: "Helvetica Neue";
-  font-size: 14px;
-  line-height: 1;
-  background-color: #222;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  font-weight: 900;
-}
-
-header li {
-  display: inline-block;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    top: 0;
+    position: fixed;
 }
 
 header a {
-  display: block;
-  color: rgb(229,229,234);
-  padding: 30px 20px;
-  letter-spacing: 1px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 header a:hover {
-  display: block;
-  color: rgb(0,122,255);
-  padding: 30px 20px;
-  letter-spacing: 1px;
+    background-color: #ddd;
+    color: black;
 }
 
 footer {
-  font-family: "Helvetica Neue";
-  font-size: 14px;
-  line-height: 1.25;
   background-color: #222;
-  position: relative;
-  top: 0;
-  width: 100%;
-  font-weight: 900;
+  overflow: hidden;
+  text-align:center;
 }
 
-footer li {
+footer p {
   display: inline-block;
+  color: #f2f2f2;
+  padding: 14px;
+  font-size: 13px;
+  letter-spacing: 2px;
 }
 
-footer a {
-  display: block;
-  color: rgb(229,229,234);
-  padding: 30px 20px;
-  letter-spacing: 1px;
+footer p:hover {
+  background-color: #f2532b;
+  color: black;
 }
 
-footer a:hover {
-  display: block;
-  color: rgb(255,59,48);
-  padding: 30px 20px;
-  letter-spacing: 1px;
+img {
+	border-radius: 5px;
 }
 
-a.home {
-  color: rgb(0,122,255);
+figcaption {
+	letter-spacing: 2px
+	color: green;
+	font-size: 13px;
 }
-
-.welcome {
-  background-color: rgb(52,199,89);
-  padding: 100px 0;
-  margin-top: 77px;
-  text-align: center;
-}
-
-.content {
-  padding: 20px;
-  margin: 20px 0;
-  text-align: center;
-  color: #4C4C4C;
-}
-
-.input {
-    padding: 9px;
-    display: block;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    width: 50%;
-    font-family: "Helvetica Neue";
-    border: 1px solid #ccc;
-  }
