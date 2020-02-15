@@ -1,21 +1,66 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-  <link rel='stylesheet' type='text/css' href='6-Layout.css'></head>
+  <head>
+    <title>Layout 6</title>
+
+    <style>
+      .container 
+      {
+        display: grid;
+        border: 1px grey solid;
+        height: 150px;
+        width:350px;
+        grid-template: 3px repeat(5, 1fr) 3px / 3px repeat(5, 1fr) 50px;
+        grid-gap: 3px;
+
+      }
+
+      .box1 { grid-area: 2 / 2 / span 1 / span 1; }
+
+      .box2 { grid-area: 2 / 3 / span 1 / span 2; }
+
+      .box3 { grid-area: 2 / 5 / span 1 / span 2; }
+
+      .box4 { grid-area: 3 / 2 / span 1 / span 1; }
+
+      .box5 { grid-area: 3 / 3 / span 1 / span 2; }
+
+      .box6 { grid-area: 3 / 5 / span 1 / span 2; }
+
+      .box7 { grid-area: 4 / 2 / span 1 / span 1; }
+
+      .box8 { grid-area: 4 / 3 / span 1 / span 2; }
+
+      .box9 { grid-area: 4 / 5 / span 1 / span 2; }
+
+      .box10 { grid-area: 5 / 2 / span 1 / span 1; }
+
+      .box 
+      {
+          background-color: purple;
+          color: white;
+          font-size​:​ ​1.4​em​;
+          font-family: sans-serif;
+      }
+    </style>
+  </head>
   
-<body>
-  <section class="container">
-    <div class="box box1">One</div>
-    <div class="box box2">Two</div>
-    <div class="box box3">Three</div>
-    <div class="box box4">Four</div>
-    <div class="box box5">Five</div>
-    <div class="box box6">Six</div>
-    <div class="box box7">Seven</div>
-    <div class="box box8">Eight</div>
-    <div class="box box9">Nine</div>
-    <div class="box box10">Ten</div>    
-  </section>
-</body>
+  <body>
+    <section class="container">
+
+      <div class="box box1">One</div>
+      <div class="box box2">Two</div>
+      <div class="box box3">Three</div>
+      <div class="box box4">Four</div>
+      <div class="box box5">Five</div>
+      <div class="box box6">Six</div>
+      <div class="box box7">Seven</div>
+      <div class="box box8">Eight</div>
+      <div class="box box9">Nine</div>
+      <div class="box box10">Ten</div>  
+
+    </section>
+  </body>
 
 </html>
