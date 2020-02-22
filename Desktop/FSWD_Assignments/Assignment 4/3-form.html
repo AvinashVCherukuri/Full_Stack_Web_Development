@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Form 3</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <style>
+      .cover
+      {
+        font-family: Helvetica, sans-serif;
+        padding: 70px;
+        display: flex;
+        justify-content: space-around;
+        background-image: linear-gradient(to bottom right, rgba(255, 165, 0, 0.7), rgba(0, 255, 255, 0.9));
+      }
+
+      header
+      {
+      	padding-top: 20px;
+      	padding-left: 10px;
+      	padding-bottom: 25px;
+      }
+    </style>
+    
+  </head>
+
+  <body>
+  	<section class= "cover">
+	  	<section class="col-sm-4 border" style= "background-color: white">
+
+	  	    <form>
+	  	    	<header>
+	  				<h1 class="display-5"><strong>CONTACT FORM</strong></h1>
+	  			</header>
+
+		  	    <section class="form-group row">
+	    			<label for="inputName" class="col-sm-2 col-form-label">Name</label>
+	    			<div class="col-sm-10">
+	      				<input type="text" class="form-control" id="InputName">
+	    			</div>
+	  			</section>
+
+		  	    <section class="form-group row">
+	    			<label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+	    			<div class="col-sm-10">
+	      				<input type="test" class="form-control" id="InputEmail">
+	    			</div> </br> </br>
+	  			</section>
+
+		  	    <section class="form-check">
+		  		  	<input class="form-check-input" type= "radio" name= "Student" value= "UnderGraduate" id="InputClass">
+		  		  	<label for= "UnderGraduate">UnderGraduate</label>
+		  		  	</br>
+		  		  	<input class="form-check-input" type= "radio" name= "Student" value= "Graduate" id="InputClass">
+		  		  	<label for= "Graduate">Graduate</label>
+		  		  	</br>
+		  		  	<input class="form-check-input" type = "radio" name = "Student" value = "Others" id="InputClass">
+		  		  	<label for = "Others">Others</label>
+		  		  	</br></br>
+		  		</section>
+
+		  		<section>
+	    			<div class="form-group">
+	      				<label for="comment">Any Comments?</label>
+	      				<textarea class="form-control" rows="5" id="InputComments"></textarea>
+	    			</div> </br>
+	  			</section>
+	            
+		  		<section>
+		          	<input type="button" value="Submit" class = "btn btn-primary" onclick="ConsoleGo()">
+		  		  	<input type="reset" class = "btn btn-secondary">
+		  		  	</br> </br>
+		  	    </section>
+	  	    </form>
+	    </section>
+	</section>
+
+	<script>
+		function ConsoleGo()
+		{
+			var Name = document.getElementById("InputName").value;
+			var Email = document.getElementById("InputEmail").value;
+			var Class = document.getElementById("InputClass").value;
+			var Comments = document.getElementById("InputComments").value;
+
+			console.log("Name : " + Name);
+			console.log("Email : " + Email);
+			console.log("Class : " + Class);
+			console.log("Comments : " + Comments);
+		}
+	</script>
+  </body>
+  
+ </html>
