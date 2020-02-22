@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>BackGround Colour Program</title>
+	</head>
+
+	<body>
+		<h4 style="text-align:center;">This Program changes your Window BackGround Colour every time you Press "Change Colour" Button</h4>
+		</br></br>
+
+		<form style="text-align:center;">
+		    <input type="button" value="Change Colour" onclick="ColourGo()">
+  		</form>
+  
+  		<script>
+			function ColourGo()
+			{
+				var Digits = ["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"];
+				var Colour = "#";
+				var Run;
+
+				for (Run = 0 ; Run < 6 ; Run++ )
+				{
+					Colour += Digits[Math.floor(Math.random() * Digits.length)];
+				}
+
+  				document.body.style.backgroundColor = Colour;
+			}
+  		</script>
+	</body>
+</html> 
