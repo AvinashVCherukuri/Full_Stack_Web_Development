@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<title>Reverse Number Program</title>
-	</head>
+	  <head>
+		   <title>Reverse Number Program</title>
+	  <head>
 
-	<body>
-		<h4 style="text-align:center;">This Program will Reverse a 6 Digit number and will give you an Alert</h4>
-		</br></br>
+  	<body>
+    		<h4 style="text-align:center;">This Program will Reverse a 6 Digit number and will give you an Alert</h4>
+    		</br></br>
 
-		<form style="text-align:center;">
-  			Enter a 6 Digit Number<input id="UserNumber">
-  			<button id="LetsGo" type="button" onclick="ReverseText()">Submit</button>
-  		</form>
-  
-  		<script>
+    		<form style="text-align:center;">
+      			Enter a 6 Digit Number<input id="UserNumber">
+      			<button id="LetsGo" type="button" onclick="ReverseText()">Submit</button>
+      	</form>
+      
+      	<script>
             function ReverseText() 
             {
-    			var InputNumber = document.getElementById("UserNumber").value;
-    			if (InputNumber.length != 6) 
-    			{
-    				window.alert("Entered Number is of length : " + InputNumber.length + "\nPlease Enter a 6 Digit Number");
-    				return;
-    			}
-  				else 
-  				{
-  					InputNumber = InputNumber.split("").reverse().join("");
-    				window.alert("Reverse of Entered Number : " + InputNumber);
-    			}
-      		}
-  		</script>
-	</body>
+        		    var InputNumber = document.getElementById("UserNumber").value;
+
+        			  if (InputNumber.length != 6) 
+        			  {
+        				    window.alert("Entered Number is of length : " + InputNumber.length + "\nPlease Enter a 6 Digit Number");
+        				    return;
+        			  }
+      				  else 
+      				  {
+      					    InputNumber = InputNumber.split("").reverse().join("");
+        				    window.alert("Reverse of Entered Number : " + InputNumber);
+        			  }
+          	}
+      	</script>
+  	</body>
 </html> 
