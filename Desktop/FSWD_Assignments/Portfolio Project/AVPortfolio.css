@@ -1,85 +1,128 @@
-body {
+html {
+  font-size: 16px;
   font-family: "Helvetica Neue";
 }
 
-h1 {
-  color: grey;
-  font-size: 60px;
+body {
+  background-color: rgb(229,229,234);
 }
 
-h3 {
-  color: "dark grey";
-  font-size: 30px;
-  letter-spacing: 4px;
-  word-spacing: 1px;
+h1 {
+  font-size: 28px;
+  font-family: "Helvetica Neue";
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: rgb(229,229,234);
 }
 
 h2 {
-  color: "teal";
-  font-size: 15px;
-  letter-spacing: 4px;
-  word-spacing: 1px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 2.5;
+  font-family: "Helvetica Neue";
+  word-spacing: 0.05em;
+  letter-spacing: 5px;
+  color: rgb(0,122,255);
 }
 
-p{
-	color : orange;
-	font-size: 20px;
-	letter-spacing: 2px;
-	word-spacing: 1px;
+a {
+  text-decoration: none;
 }
 
-.go li {
-	display: inline-block;
+p {
+  margin: 16px 0;
+  font-family: "Helvetica Neue";
+  letter-spacing: 1.3px;
+  color: rgb(44,44,46);
+}
+
+#introduction {
+  padding-top: 77px;
+  margin-top: -77px;
 }
 
 header {
-    overflow: hidden;
-    background-color: #333;
-    width: 100%;
-    top: 0;
-    position: fixed;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  line-height: 1;
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-weight: 900;
+}
+
+header li {
+  display: inline-block;
 }
 
 header a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  display: block;
+  color: rgb(229,229,234);
+  padding: 30px 20px;
+  letter-spacing: 1px;
 }
 
 header a:hover {
-    background-color: #ddd;
-    color: black;
+  display: block;
+  color: rgb(0,122,255);
+  padding: 30px 20px;
+  letter-spacing: 1px;
 }
 
 footer {
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  line-height: 1.25;
   background-color: #222;
-  overflow: hidden;
-  text-align:center;
+  position: relative;
+  top: 0;
+  width: 100%;
+  font-weight: 900;
 }
 
-footer p {
+footer li {
   display: inline-block;
-  color: #f2f2f2;
-  padding: 14px;
-  font-size: 13px;
-  letter-spacing: 2px;
 }
 
-footer p:hover {
-  background-color: #f2532b;
-  color: black;
+footer a {
+  display: block;
+  color: rgb(229,229,234);
+  padding: 30px 20px;
+  letter-spacing: 1px;
 }
 
-img {
-	border-radius: 5px;
+footer a:hover {
+  display: block;
+  color: rgb(255,59,48);
+  padding: 30px 20px;
+  letter-spacing: 1px;
 }
 
-figcaption {
-	letter-spacing: 2px
-	color: green;
-	font-size: 13px;
+a.home {
+  color: rgb(0,122,255);
 }
+
+.welcome {
+  background-color: rgb(52,199,89);
+  padding: 100px 0;
+  margin-top: 77px;
+  text-align: center;
+}
+
+.content {
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  color: #4C4C4C;
+}
+
+.input {
+    padding: 9px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 50%;
+    font-family: "Helvetica Neue";
+    border: 1px solid #ccc;
+  }
