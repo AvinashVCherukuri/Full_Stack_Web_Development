@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Window Size Program</title>
+	</head>
+
+	<body>
+		<h4 style="text-align:center;">This Program tells you the Size of your Browser Window</h4>
+		</br></br>
+
+		<form style="text-align:center;">
+			<div>
+			  <h4>Width</h4>
+			  <h3 class="width"></h4>
+			</div>
+
+			<div>
+			  <h4>Height</h4>
+			  <h3 class="height"></h4>
+			</div>
+  		</form>
+  
+  		<script>
+			WindowGo();
+			window.addEventListener('resize', WindowGo);
+
+			function WindowGo()
+			{
+  				document.querySelector('.width').innerText = document.documentElement.clientWidth;
+  				document.querySelector('.height').innerText = document.documentElement.clientHeight;
+			}
+  		</script>
+	</body>
+</html> 
