@@ -1,0 +1,32 @@
+<body>
+    <div>
+        <h1 style="font-family: Avenir">Using the API of Fire and Ice</h1>
+        <button id="fetchHouseDataBtn">Fetch House Data</button>
+    </div>
+    <hr>
+    <div id="response"></div>
+
+<script>
+        document.getElementById('fetchHouseDataBtn').addEventListener('click', fetchUserData);
+    
+        function fetchUserData()
+        {
+            fetch('https://anapioficeandfire.com/api/houses/')
+                .then(response => response.json())
+                .then(houses => 
+                {
+                    let output = '<h2 style="font-family: Avenir">Lists of Houses</h2>';
+
+                    output += '<ul style="font-family: Avenir">';
+
+                    houses.forEach(function(house) {
+                        output += `<li>${house.name}</li>`;
+                    });
+
+                    output += '</ul>'
+
+                    document.getElementById("response").innerHTML = output;
+                });
+        }
+</script>
+</body>
