@@ -13,8 +13,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 app.get('/', function(req, res){
-  // You should use one of line depending on type of frontend you are with
-  res.sendFile(__dirname + '/index.html'); //if html file is root directory
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.post('/',function(req,res){
